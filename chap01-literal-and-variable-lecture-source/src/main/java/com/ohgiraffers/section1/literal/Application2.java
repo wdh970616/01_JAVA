@@ -79,6 +79,24 @@ public class Application2 {
         System.out.println("seongmin" + true);  //  논리값과 연산
 
         //  주의 해야할 점 : 숫자로 된 문자열 형태의 값도 '+' 연산을 했을때 문자열 합치기가 된다.
-        System.out.println("123" + "456");
+        System.out.println("123" + "456");  //   123456
+
+        //  논리값과 논리값의 연산
+        //  논리값끼리의 연산은 모든 연산자 사용이 불가능하다.
+//        System.out.println(true + false);
+//        System.out.println(true - false);
+//        System.out.println(true * false);
+//        System.out.println(true / false);
+//        System.out.println(true % false);
+
+        //  논리값과 정수의 연산도 마찬가지로 안된다.
+        //  논리값과 실수의 연산도 마찬가지로 안된다.
+        //  논리값과 문자의 연산도 마찬가지로 안된다.
+        //  하지만 논리값과 문자열은 '+' 연산 가능하다.
+
+        //  논리값과 문자열의 연산
+        System.out.println("================= 논리값과 문자열의 연산 =================");
+        System.out.println(true + "a");
+
     }
 }
