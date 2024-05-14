@@ -53,5 +53,7 @@ public class Application1 {
         System.out.println("longMulti = " + longMulti);
 
         longMulti = (long) firstNum * secondNum;    // 강제 형변환
+
+        // 내용 변경 테스트
     }
 }
