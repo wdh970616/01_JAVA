@@ -51,5 +51,23 @@ public class Application2 {
 
         short snum2 = (short) ch;
         System.out.println("snum2 = " + snum2);
+
+        // 정수를 char 자료형에 강제형변환해서 대입하기
+        int num1 = 97;
+        int num2 = -97; // 음수도 형변환이 가능하다.
+
+        char ch2 = (char) num1;
+        System.out.println("ch2 = " + ch2);
+        char ch3 = (char) num2;
+        System.out.println("ch3 = " + ch3);
+
+        /* 강제형변환을 해도 논리형은 규칙에서 제외된다. */
+        boolean isTrue = true;
+//        byte b = (byte) isTrue;
+//        short s = (short) isTrue;
+//        int i = (int) isTrue;
+//        float f = (float)  isTrue;
+//        double d = (double) isTrue;
+//        char c = (char) isTrue;
     }
 }

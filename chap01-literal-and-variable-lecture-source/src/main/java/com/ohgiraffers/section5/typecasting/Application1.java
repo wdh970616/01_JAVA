@@ -74,13 +74,13 @@ public class Application1 {
         System.out.println("ch2 = " + ch2);
 
         /* 논리형은 형변환 규칙에서 제외된다. */
-        //boolean isTrue = true;
-        //byte b = isTrue;
-        //short s = isTrue;
-        //int i = isTrue;
-        //long l = isTrue;
-        //char c = isTrue;
-        //float f = isTrue;
-        //double d = isTrue;
+//        boolean isTrue = true;
+//        byte b = isTrue;
+//        short s = isTrue;
+//        int i = isTrue;
+//        long l = isTrue;
+//        char c = isTrue;
+//        float f = isTrue;
+//        double d = isTrue;
     }
 }
