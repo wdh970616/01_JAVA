@@ -3,7 +3,7 @@ package com.ohgiraffers.section02.package_and_import;
 import com.ohgiraffers.section01.method.Calculator;
 import static com.ohgiraffers.section01.method.Calculator.staticMaxNumberOf;
 
-public class Application2 {
+public class  Application2 {
     public static void main(String[] args) {
 
         /*
