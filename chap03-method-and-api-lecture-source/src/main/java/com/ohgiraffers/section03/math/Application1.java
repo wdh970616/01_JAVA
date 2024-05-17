@@ -16,7 +16,7 @@ public class Application1 {
          */
 
         /*
-         * java.lang.math
+         * java.lang.Math
          *
          * Math 클래스는 수학에서 자주 사용하는 상수들과 함수들을 미리 구현해놓은 클래스이다.
          * 모든 메소드는 static 메소드로 작성되어있다.
