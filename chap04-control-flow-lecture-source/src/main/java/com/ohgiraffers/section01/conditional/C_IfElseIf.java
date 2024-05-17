@@ -62,36 +62,30 @@ public class C_IfElseIf {
         int score = scScore.nextInt();
 
         String grade = "!ERROR!";
-        if (score < 60 && score >= 0) {
-            grade = "F";
-            if(score < 0) {
-                grade = "!ERROR!";
-                System.out.println("잘못된 점수를 입력하였습니다. 다시 시도해주세요.");
-            }
-        } else if (score < 70) {
-            grade = "D";
-            if (score >= 65) {
+        if (score <= 100 && score >= 90) {
+            grade = "A";
+            if (score >= 95) {
                 grade += "+";
             }
-        } else if (score < 80) {
-            grade = "C";
-            if (score >= 75) {
-                grade += "+";
-            }
-        } else if (score < 90) {
+        } else if (score >= 80) {
             grade = "B";
             if (score >= 85) {
                 grade += "+";
             }
-        } else if (score <= 100) {
-            grade = "A";
-            if (score <= 95) {
+        } else if (score >= 70) {
+            grade = "C";
+            if (score >= 75) {
                 grade += "+";
-                if (score > 100) {
-                    System.out.println("잘못된 점수를 입력하였습니다. 다시 시도해주세요.");
-                }
             }
+        } else if (score >= 60) {
+            grade = "D";
+            if (score >= 65) {
+                grade += "+";
+            }
+        } else {
+            grade = "F";
         }
-        System.out.println(name + " 학생의 점수는 " + score + "점이고, 등급은 " + grade + " 입니다.");
+
+        System.out.println(name + " 학생의 점수는 " + score + "점 이며, 등급은 " + grade + " 입니다.");
     }
 }

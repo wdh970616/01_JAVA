@@ -1,4 +1,4 @@
-package com.ohgiraffers.section01.conditional;[i]
+package com.ohgiraffers.section01.conditional;
 
 import java.util.Scanner;
 
