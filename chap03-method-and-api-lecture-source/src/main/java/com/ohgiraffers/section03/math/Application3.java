@@ -6,9 +6,9 @@ public class Application3 {
     public static void main(String[] args) {
 
         /*
-        * java.util.Random
+        * java.util.random
         *
-        * java.util.Random 클래스의 nextInt() 메소드를 이용한 난수 발생
+        * java.util.random 클래스의 nextInt() 메소드를 이용한 난수 발생
         * nextInt(int bound) : 0부터 매개변수로 전달받은 정수 범위까지의 난수를 발생시켜서 정수 형태로 반환
         *
         * 원하는 범위의 난수를 구하는 공식
