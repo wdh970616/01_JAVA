@@ -52,6 +52,7 @@ public class C_IfElseIf {
          *  추가로 각 등급의 중간점수(95, 85, 75..)인 경우 '+'를 붙여서 등급을 세분화 하다보니 신경쓸게 이만 저만이 아니다.
          *  그래서 학생의 이름과 점수를 입력하면 자동으로 학점 등급이 계산되는 프로그램을 만들기로 했다.
          * */
+        String grade = "NONE";
 
         System.out.print("이름을 입력하세요. : ");
         Scanner scName = new Scanner(System.in);
@@ -61,31 +62,33 @@ public class C_IfElseIf {
         Scanner scScore = new Scanner(System.in);
         int score = scScore.nextInt();
 
-        String grade = "!ERROR!";
-        if (score <= 100 && score >= 90) {
-            grade = "A";
-            if (score >= 95) {
-                grade += "+";
+        if (score <= 100) {
+            if (score >= 90) {
+                grade = "A";
+                if (score >= 95) {
+                    grade += "+";
+                }
+            } else if (score >= 80) {
+                grade = "B";
+                if (score >= 85) {
+                    grade += "+";
+                }
+            } else if (score >= 70) {
+                grade = "C";
+                if (score >= 75) {
+                    grade += "+";
+                }
+            } else if (score >= 60) {
+                grade = "D";
+                if (score >= 65) {
+                    grade += "+";
+                }
+            } else {
+                grade = "F";
             }
-        } else if (score >= 80) {
-            grade = "B";
-            if (score >= 85) {
-                grade += "+";
-            }
-        } else if (score >= 70) {
-            grade = "C";
-            if (score >= 75) {
-                grade += "+";
-            }
-        } else if (score >= 60) {
-            grade = "D";
-            if (score >= 65) {
-                grade += "+";
-            }
+            System.out.println(name + " 학생의 점수는 " + score + "점 이며, 등급은 " + grade + " 입니다.");
         } else {
-            grade = "F";
+            System.out.println("점수를 잘못 입력하였습니다.");
         }
-
-        System.out.println(name + " 학생의 점수는 " + score + "점 이며, 등급은 " + grade + " 입니다.");
     }
 }
