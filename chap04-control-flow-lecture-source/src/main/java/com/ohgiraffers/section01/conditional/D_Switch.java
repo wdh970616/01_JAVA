@@ -38,22 +38,22 @@ public class D_Switch {
         int result = 0;
 
         switch (op) {
-            case '+' :
+            case '+':
                 result = num1 + num2;
                 break;
-            case '-' :
+            case '-':
                 result = num1 - num2;
                 break;
-            case '*' :
+            case '*':
                 result = num1 * num2;
                 break;
-            case '/' :
+            case '/':
                 result = num1 / num2;
                 break;
-            case '%' :
+            case '%':
                 result = num1 % num2;
                 break;
-                /* 산술연산 외에 다른 문자에 대한 처리는 생략하였음. */
+            /* 산술연산 외에 다른 문자에 대한 처리는 생략하였음. */
         }
 
         System.out.println(num1 + " " + op + " " + num2 + " = " + result);
@@ -62,9 +62,9 @@ public class D_Switch {
     public void testSwitchVendingMachine() {
 
         /*
-        * switch문을 이용해서 문자열 값 비교 및 break에 대한 테스트
-        * 1. JDK 1.7 이상부터 switch문을 이용해 문자열을 비교할 수 있다.
-        * 2. break를 사용하지 않으면 멈추지 않고 계속 실행구문을 동작시킨다.
+         * switch문을 이용해서 문자열 값 비교 및 break에 대한 테스트
+         * 1. JDK 1.7 이상부터 switch문을 이용해 문자열을 비교할 수 있다.
+         * 2. break를 사용하지 않으면 멈추지 않고 계속 실행구문을 동작시킨다.
          */
 
         // switch문을 이용한 간단한 자판기
@@ -78,30 +78,29 @@ public class D_Switch {
 
         int price = 0;
 
-        switch(selectedDrink) {
-            case "사이다" :
+        switch (selectedDrink) {
+            case "사이다":
                 System.out.println("사이다를 선택하셨습니다.");
                 price = 500;
                 break;
-            case "콜라" :
+            case "콜라":
                 System.out.println("콜라를 선택하셨습니다.");
                 price = 600;
                 break;
-            case "환타" :
+            case "환타":
                 System.out.println("환타를 선택하셨습니다.");
                 price = 700;
                 break;
-            case "박카스" :
+            case "박카스":
                 System.out.println("박카스를 선택하셨습니다.");
                 price = 800;
                 break;
-            case "핫식스" :
+            case "핫식스":
                 System.out.println("핫식스를 선택하셨습니다.");
                 price = 900;
                 break;
-                // 5가지 외의 문자열에 대한 처리는 생략하였음.
+            // 5가지 외의 문자열에 대한 처리는 생략하였음.
         }
-
         System.out.println(price + "원을 투입해주세요.");
     }
 }

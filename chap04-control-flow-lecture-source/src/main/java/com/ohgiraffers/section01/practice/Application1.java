@@ -6,7 +6,7 @@ public class Application1 {
     public static void main(String[] args) {
 
         Application1 app1 = new Application1();
-        app1.canYouRide();
+//        app1.canYouRide();
         app1.testResult();
 
     }
@@ -41,7 +41,7 @@ public class Application1 {
         System.out.print("수학시험 점수를 입력해주세요. : ");
         int mathScore = sc.nextInt();
 
-        if (englishScore <= 100 && mathScore <= 100) {
+        if (englishScore >= 0 && mathScore >= 0 && englishScore <= 100 && mathScore <= 100) {
             if (englishScore >= 40 && mathScore >= 40) {
                 if ((englishScore + mathScore) / 2 >= 60) {
                     System.out.println("시험 합격");

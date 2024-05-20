@@ -109,13 +109,16 @@ public class A_NestedFor {
 
     public void printHourglassStars() {
         Scanner sc = new Scanner(System.in);
-        System.out.print("모래시계 별찍기 : 한 쪽의 크기를 몇 행으로 출력하시겠습니까? ");
+        System.out.print("모래시계 별찍기 : 모래가 떨어지는 높이를 몇 행으로 출력하시겠습니까? ");
         int row = sc.nextInt();
         for (int i = 1; i <= row; i++) {
+            if (i == row) {
+                break;
+            }
             for (int j = 1; j <= i - 1; j++) {
                 System.out.print(" ");
             }
-            for (int k = 1; k <= ((row - i ) * 2) + 1; k++) {
+            for (int k = 1; k <= ((row - i) * 2) + 1; k++) {
                 System.out.print("*");
             }
             System.out.println();

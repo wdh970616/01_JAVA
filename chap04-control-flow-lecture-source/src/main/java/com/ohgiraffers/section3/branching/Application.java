@@ -13,6 +13,6 @@ public class Application {
 
 //        b_continue.testSimpleContinueStatement();
 //        b_continue.testSimpleContinueStatement2();
-        b_continue.testJumpContinue();
+//        b_continue.testJumpContinue();
     }
 }

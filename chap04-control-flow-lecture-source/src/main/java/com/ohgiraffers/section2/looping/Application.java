@@ -20,7 +20,7 @@ public class Application {
 //        a_nestedFor.printReverseTriangleStars();
 //        a_nestedFor.printSymmetryTriangleStars();
 //        a_nestedFor.printPyramidStars();
-        a_nestedFor.printHourglassStars();
+//        a_nestedFor.printHourglassStars();
 
         B_While b_while = new B_While();
 
@@ -33,6 +33,6 @@ public class Application {
         C_Dowhile c_dowhile = new C_Dowhile();
 
 //        c_dowhile.testSimpleDoWhileStatement();
-//        c_dowhile.testDoWhileExample1();
+        c_dowhile.testDoWhileExample1();
     }
 }
