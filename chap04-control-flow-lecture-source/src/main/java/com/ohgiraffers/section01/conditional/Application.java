@@ -14,7 +14,7 @@ public class Application {
 
         C_IfElseIf cIfElseIf = new C_IfElseIf();
 //        cIfElseIf.testSimpleIfElseIfStatement();
-//        cIfElseIf.testNestedIfElseIfStatement();
+        cIfElseIf.testNestedIfElseIfStatement();
 
         D_Switch dSwitch = new D_Switch();
 //        dSwitch.testSimpleSwitchStatement();

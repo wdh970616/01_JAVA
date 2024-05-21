@@ -61,8 +61,7 @@ public class C_IfElseIf {
         System.out.print("점수를 입력하세요. : ");
         Scanner scScore = new Scanner(System.in);
         int score = scScore.nextInt();
-
-        if (score <= 100 && score > 0) {
+        if (score >= 0 && score <= 100) {
             if (score >= 90) {
                 grade = "A";
                 if (score >= 95) {
@@ -88,7 +87,7 @@ public class C_IfElseIf {
             }
             System.out.println(name + " 학생의 점수는 " + score + "점 이며, 등급은 " + grade + " 입니다.");
         } else {
-            System.out.println("점수를 잘못 입력하였습니다. 다시 시도해주세요.");
+            System.out.println("점수를 잘못 입력하셨습니다. 다시 시도해주세요.");
         }
     }
 }
