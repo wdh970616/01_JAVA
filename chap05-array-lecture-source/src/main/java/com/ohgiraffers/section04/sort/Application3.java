@@ -12,10 +12,35 @@ public class Application3 {
          * 100개 이상의 자료에서는 급격하게 속도가 저하된다.
          */
 
-        int[] arr = {2, 3, 4, 6, 1, 3};
+        System.out.println("========== 선택정렬 하기전 iarr의 배열 ==========");
+        int[] iarr = {2, 5, 4, 6, 1, 3};
+        for (int i = 0; i < iarr.length; i++) {
+            System.out.print(iarr[i] + " ");
+        }
+        System.out.println();
 
         int min;    // 최소값을 가진 데이터의 인덱스 저장
         int temp;
-        
+
+        for (int i = 0; i < iarr.length; i++) {
+            min = i;
+            // 해당 인덱스의 다음 인덱스부터 끝까지 반복
+            // min값의 인덱스를 찾는다.
+            for (int j = i + 1; j < iarr.length; j++) {
+                // if문의 부등호 방향을 바꿔서
+                // 오름차순을 내림차순으로 변경 가능
+                if (iarr[min] > iarr[j]) {
+                    min = j;
+                }
+            }
+            // 찾은 인덱스를 왼쪽에서부터 값을 교환해준다.
+            temp = iarr[min];
+            iarr[min] = iarr[i];
+            iarr[i] = temp;
+        }
+        System.out.println("========== 선택정렬 후의 iarr의 배열 ==========");
+        for (int i = 0; i < iarr.length; i++) {
+            System.out.print(iarr[i] + " ");
+        }
     }
 }

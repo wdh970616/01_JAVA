@@ -9,7 +9,7 @@ public class Application2 {
         // 정렬할 배열
         int[] iarr = {2, 5, 4, 6, 1, 3};
 
-        System.out.println("========== 순차정렬하기 전 iarr의 배열 ==========");
+        System.out.println("========== 순차정렬 하기전 iarr의 배열 ==========");
         for (int i = 0; i < iarr.length; i++) {
             System.out.print(iarr[i] + " ");
         }
@@ -28,7 +28,7 @@ public class Application2 {
             }
         }
 
-        System.out.println("========== 순차정렬한 후의 iarr의 배열 ==========");
+        System.out.println("========== 순차정렬 후의 iarr의 배열 ==========");
         for (int i = 0; i < iarr.length; i++) {
             System.out.print(iarr[i] + " ");
         }
