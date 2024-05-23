@@ -3,7 +3,7 @@ package com.ohgiraffers.section04.sort;
 public class Application3 {
     public static void main(String[] args) {
 
-        // 선택정령
+        // 선택정렬
 
         /*
          * 배열을 전부 탐색하여 최소값을 고르고 왼쪽부터 채워나가는 방식의 정렬
