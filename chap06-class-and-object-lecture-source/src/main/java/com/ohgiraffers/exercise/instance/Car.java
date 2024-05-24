@@ -6,15 +6,15 @@ public class Car {
     private int since;
     private String kinds;
 
-    public void carName(String name){
+    public void carName(String name) {
         this.name = name;
     }
 
-    public void carSince(int since){
+    public void carSince(int since) {
         this.since = since;
     }
 
-    public void carKinds(String kinds){
+    public void carKinds(String kinds) {
         this.kinds = kinds;
     }
 

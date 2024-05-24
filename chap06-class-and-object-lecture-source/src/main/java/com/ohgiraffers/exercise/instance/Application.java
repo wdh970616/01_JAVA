@@ -3,14 +3,14 @@ package com.ohgiraffers.exercise.instance;
 public class Application {
     public static void main(String[] args) {
 
-        Dog dog = new Dog();
+        Dog dog = new Dog("Choco", 12, "말티즈");
         dog.dogName("Max");
         dog.dogAge(5);
         dog.dogBreed("골든 리트리버");
         System.out.println(dog.getDogInfo());
         System.out.println();
 
-        Book book = new Book();
+        Book book = new Book("한동주", "시집", "반투명", 89);
         book.bookWriter("Joshua Bloch");
         book.bookTitle("Effective Java");
         book.bookCover("하드");
@@ -25,7 +25,7 @@ public class Application {
         System.out.println(car.getCarInfo());
         System.out.println();
 
-        Man man = new Man();
+        Man man = new Man(25, "Mark", false, 0);
         man.hisAge(30);
         man.hisName("James");
         man.isHeMarried(true);

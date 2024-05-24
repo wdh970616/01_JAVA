@@ -26,4 +26,15 @@ public class Dog {
         return "이 강아지의 이름은 '" + name + "'이고 나이는 " + age + "살이며 " + breed + "입니다.";
     }
 
+    public Dog() {
+        System.out.println("========== Dog 기본생성자 호출됨 ==========");
+    }
+
+    public Dog(String name, int age, String breed) {
+        this.name = name;
+        this.age = age;
+        this.breed = breed;
+        System.out.println("========== Dog 기본생성자로 호출해보기 ==========");
+        System.out.println("이 강아지의 이름은 '" + name + "'이고 나이는 " + age + "살이며 " + breed + "입니다.");
+    }
 }
