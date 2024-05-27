@@ -1,14 +1,17 @@
-package com.ohgiraffers.subProject;
+package com.ohgiraffers.subProject;public class Storage {
 
-public class Storage {
-    int coffeeBeans;
-    int milk;
-    int peachTeaBag;
+    static int Coffeebeans;
 
-
-    public void materialSet() {
-        this.coffeeBeans = (int) (Math.random() * 6 + 5);
-        this.milk = (int) (Math.random() * 4 + 2);
-        this.peachTeaBag = (int) (Math.random() * 4 + 2);
+    private Storage() {
     }
+
+    private static void setCoffeebeans(int coffeebeans) {
+        Coffeebeans = (int)(Math.random() * 1001 + 1000);
+    }
+
+    public static int getCoffeebeans() {
+        return Coffeebeans;
+    }
+
+
 }
