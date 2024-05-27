@@ -50,7 +50,6 @@ public class Kiosk {
             if (menu.equals("1") || menu.equals("아메리카노")) {
                 if (storage.coffeeBeans > 0) {
                     System.out.println("===== 아메리카노를 선택하셨습니다 =====");
-                    System.out.println("현재 주문 가능한 수량은 " + storage.coffeeBeans + "잔 입니다.");
                     System.out.println("(1) HOT (핫)");
                     System.out.println("(2) ICE (아이스)");
                     System.out.print("둘 중 옵션을 골라 입력해주세요 : ");
@@ -58,18 +57,28 @@ public class Kiosk {
                         String isHot = sc.nextLine();
                         if (isHot.equals("1") || isHot.equals("HOT") || isHot.equals("hot") || isHot.equals("핫")) {
                             this.isHot = true;
-                            System.out.print("주문하실 잔 수를 입력해주세요 : ");
                             while (true) {
+                                System.out.println("현재 주문 가능한 수량은 [" + storage.coffeeBeans + "]잔 입니다.");
+                                System.out.print("주문하실 잔 수를 입력해주세요 : ");
                                 howManyHotAmericano = sc.nextInt();
-                                if (howManyHotAmericano > 0 || howManyHotAmericano <= storage.coffeeBeans) {
-                                  if (howManyHotAmericano <= storage.coffeeBeans) {
+                                if (howManyHotAmericano > 0 && howManyHotAmericano <= storage.coffeeBeans) {
+                                    while (true) {
+                                        System.out.println("=== 아메리카노[HOT] '" + howManyHotAmericano + "'잔을 선택하셨습니다 ===");
+                                        System.out.println("주문이 맞으십니까?");
+                                        System.out.println("(1) 예");
+                                        System.out.println("(2) 아니오");
+                                        System.out.println("주문이 맞으시면 '예', 틀리거나 다시 주문하시려면 '아니오'를 입력해주세요.");
+                                        String isYourOrderRight = sc.nextLine();
+                                        if (isYourOrderRight.equals("1") || isYourOrderRight.equals("예") || isYourOrderRight.equals("네") || isYourOrderRight.equals("ㅇㅇ")) {
 
-                                  }  else {
-                                      System.out.println("주문하시려는 ");
-                                  }
+                                        } else if (isYourOrderRight.equals("2") || isYourOrderRight.equals("아니오") || isYourOrderRight.equals("ㄴㄴ")) {
+
+                                        } else {
+                                            System.out.println("! 잘못 입력하셨습니다 !");
+                                        }
+                                    }
                                 } else {
                                     System.out.println("! 수량을 잘못 입력하셨습니다 !");
-                                    System.out.print("주문하실 잔 수를 다시 입력해주세요 : ");
                                 }
                             }
                         }
@@ -85,6 +94,8 @@ public class Kiosk {
                 }
             } if (menu.equals("종료")) {
                 break;
+            } else {
+                System.out.println("! 잘못 입력하셨습니다 !");
             }
         }
         System.err.println("성민카페를 이용해주셔서 감사합니다! 또 방문해주세요.");
