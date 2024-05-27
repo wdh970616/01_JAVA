@@ -1,24 +1,21 @@
-package com.ohgiraffers.subProject;
+package com.ohgiraffers.subProject;public class Coffee {
 
-public class Coffee {
-
-    private static int coffeeBeans = (int) (Math.random() * 101 + 100);
-    private String menuName;
+    private String coffeeName;
     private String option;
-    private int count;
+    private int coffeeCount;
 
-    public Coffee(String menuName, String option, int count) {
-        this.menuName = menuName;
+    public Coffee(String coffeeName, String option, int coffeeCount) {
+        this.coffeeName = coffeeName;
         this.option = option;
-        this.count = count;
+        this.coffeeCount = coffeeCount;
     }
 
-    public String getMenuName() {
-        return menuName;
+    public String getCoffeeName() {
+        return coffeeName;
     }
 
-    public void setMenuName(String menuName) {
-        this.menuName = menuName;
+    public void setCoffeeName(String coffeeName) {
+        this.coffeeName = coffeeName;
     }
 
     public String getOption() {
@@ -29,19 +26,15 @@ public class Coffee {
         this.option = option;
     }
 
-    public int getCount() {
-        return count;
+    public int getCoffeeCount() {
+        return coffeeCount;
     }
 
-    public void setCount(int count) {
-        this.count = count;
+    public void setCoffeeCount(int coffeeCount) {
+        this.coffeeCount = coffeeCount;
     }
 
-    public String thisIsYourOrder() {
-        return menuName + "[" + option + "] " + count + "잔";
-    }
-
-    public static int CoffeeBeans() {
-        return Coffee.coffeeBeans;
+    public String getCoffeeInfo() {
+        return coffeeName + "[" + option + "]" + " " + coffeeCount + "잔";
     }
 }
