@@ -49,7 +49,7 @@ public class Application {
         // 바리스타 : 커피 제조 / 재료 사용으로 인한 재고수 감소시키기
         // 키오스크 : 주문 보여주기(메뉴 - HOT or ICE - 재고확인 - 수량받기 - 주문확인 - 주문보내기)
 
-        Barista barista = new Barista();
         Kiosk kiosk = new Kiosk();
+        kiosk.kiosk();
     }
 }
