@@ -24,7 +24,7 @@ public class AddOrder {
                     case 2:
                         break;
                     case 9:
-                        break;
+                        return;
                     default:
                         System.out.println("! 잘못 입력하셨습니다 !");
                 }
