@@ -58,13 +58,27 @@ public class Application2 {
 
         String day = "";
         switch (startDay.get(Calendar.DAY_OF_WEEK)) {
-            case Calendar.SUNDAY : day = "일"; break;
-            case Calendar.MONDAY : day = "월"; break;
-            case Calendar.TUESDAY : day = "화"; break;
-            case Calendar.WEDNESDAY : day = "수"; break;
-            case Calendar.THURSDAY : day = "목"; break;
-            case Calendar.FRIDAY : day = "금"; break;
-            case Calendar.SATURDAY : day = "토"; break;
+            case Calendar.SUNDAY:
+                day = "일";
+                break;
+            case Calendar.MONDAY:
+                day = "월";
+                break;
+            case Calendar.TUESDAY:
+                day = "화";
+                break;
+            case Calendar.WEDNESDAY:
+                day = "수";
+                break;
+            case Calendar.THURSDAY:
+                day = "목";
+                break;
+            case Calendar.FRIDAY:
+                day = "금";
+                break;
+            case Calendar.SATURDAY:
+                day = "토";
+                break;
         }
         System.out.println("요일 : " + day);
 
