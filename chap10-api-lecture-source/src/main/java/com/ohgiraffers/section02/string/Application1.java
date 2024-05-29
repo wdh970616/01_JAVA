@@ -75,7 +75,7 @@ public class Application1 {
          * 원본에 영향 없음
          */
         String javaoracle = "javaoracle";
-        System.out.println("substring(3, 6) = 인덱스 3부터 6까지 = " + javaoracle.substring(3, 6));
+        System.out.println("substring(3, 6) = 인덱스 3부터 6전까지 = " + javaoracle.substring(3, 6));
         System.out.println("substring(3) = 인덱스 3부터 끝까지 = " + javaoracle.substring(3));
         System.out.println("substring()도 원본에는 영향 없음 = " + javaoracle);
 
