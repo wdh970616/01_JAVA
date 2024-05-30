@@ -1,4 +1,6 @@
-package com.ohgiraffers.api_practice.member;
+package com.ohgiraffers.api_practice.member.run;
+
+import com.ohgiraffers.api_practice.member.Member;
 
 public class Run {
     public static void main(String[] args) {
