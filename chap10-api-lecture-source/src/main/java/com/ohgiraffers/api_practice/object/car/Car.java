@@ -1,4 +1,4 @@
-package com.ohgiraffers.api.object.car;
+package com.ohgiraffers.api_practice.object.car;
 
 public class Car {
     private String carName;

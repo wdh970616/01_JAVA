@@ -1,4 +1,4 @@
-package com.ohgiraffers.api.member;
+package com.ohgiraffers.api_practice.member;
 
 import java.util.Date;
 
@@ -59,6 +59,6 @@ public class Member {
     }
 
     public String information() {
-        return "회원정보 [회원번호 : " + memberNo + ", 회원이름 : " + memberName + ", 키 : " + height + ", 몸무게 : " + weight + ",생일 : " + birth + "]";
+        return "회원번호(" + memberNo + ") " + memberName + " [키:" + height + "cm, 몸무게:" + weight + "kg, 생일:" + birth + "]";
     }
 }

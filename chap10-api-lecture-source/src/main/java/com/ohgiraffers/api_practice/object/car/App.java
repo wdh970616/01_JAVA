@@ -1,4 +1,4 @@
-package com.ohgiraffers.api.object.car;
+package com.ohgiraffers.api_practice.object.car;
 
 public class App {
     public static void main(String[] args) {

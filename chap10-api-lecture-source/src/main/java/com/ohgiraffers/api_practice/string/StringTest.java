@@ -1,4 +1,4 @@
-package com.ohgiraffers.api.string;
+package com.ohgiraffers.api_practice.string;
 
 public class StringTest {
     public static void main(String[] args) {
@@ -9,6 +9,5 @@ public class StringTest {
 
         int num = sp.charSu("application car cable", 'c');
         System.out.println(num);
-
     }
 }
