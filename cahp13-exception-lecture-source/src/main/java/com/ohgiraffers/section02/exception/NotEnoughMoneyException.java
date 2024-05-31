@@ -1,2 +1,7 @@
-package com.ohgiraffers.section02;public class Exceeption {
+package com.ohgiraffers.section02.exception;
+
+public class NotEnoughMoneyException extends Exception {
+    public NotEnoughMoneyException(String message) {
+        super(message);
+    }
 }
