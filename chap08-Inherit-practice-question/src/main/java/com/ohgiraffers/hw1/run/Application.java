@@ -20,6 +20,7 @@ public class Application {
         }
         System.out.println();
 
+        ExceptionTest et = new ExceptionTest();
         Scanner sc = new Scanner(System.in);
         Scanner sc2 = new Scanner(System.in);
         Scanner sc3 = new Scanner(System.in);
@@ -35,40 +36,45 @@ public class Application {
         int count = 0;
         String again = "";
         System.out.println("========== 사원 정보 등록하기 ==========");
-        do {
-            System.out.print("이름을 입력해주세요 : ");
-            String name = sc.nextLine();
-            System.out.print("나이를 입력해주세요 : ");
-            int age = sc2.nextInt();
-            System.out.print("신장을 입력해주세요 : ");
-            double height = sc3.nextDouble();
-            System.out.print("몸무게를 입력해주세요 : ");
-            double weight = sc4.nextDouble();
-            System.out.print("급여를 입력해주세요 : ");
-            int salary = sc5.nextInt();
-            System.out.print("부서를 입력해주세요 : ");
-            String dept = sc6.nextLine();
-            employees[count] = new EmployeeDTO(name, age, height, weight, salary, dept);
-            count++;
-            System.out.println(count + "번째로 정보가 추가되었습니다.");
-            System.out.print("추가하시려면 'y'를, 종료하시려면 'n'을 입력하세요 : ");
-            again = sc7.nextLine();
-            switch (again) {
-                case "y":
-                    break;
-                case "n":
-                    break;
-                default:
-                    for (; !(again.equals("y") || again.equals("n")); ) {
-                        System.out.print("잘못 입력하셨습니다. 다시 입력해주세요 : ");
-                        again = sc7.nextLine();
-                    }
-            }
-        } while (!again.equals("n"));
+        try {
+            do {
+                System.out.print("이름을 입력해주세요 : ");
+                String name = sc.nextLine();
+                System.out.print("나이를 입력해주세요 : ");
+                int age = sc2.nextInt();
+                System.out.print("신장을 입력해주세요 : ");
+                double height = sc3.nextDouble();
+                System.out.print("몸무게를 입력해주세요 : ");
+                double weight = sc4.nextDouble();
+                System.out.print("급여를 입력해주세요 : ");
+                int salary = sc5.nextInt();
+                System.out.print("부서를 입력해주세요 : ");
+                String dept = sc6.nextLine();
+                et.checkInfo(age, height, weight, salary);
+                employees[count] = new EmployeeDTO(name, age, height, weight, salary, dept);
+                count++;
+                System.out.println(count + "번째로 정보가 추가되었습니다.");
+                System.out.print("추가하시려면 'y'를, 종료하시려면 'n'을 입력하세요 : ");
+                again = sc7.nextLine();
+                switch (again) {
+                    case "y":
+                        break;
+                    case "n":
+                        break;
+                    default:
+                        for (; !(again.equals("y") || again.equals("n")); ) {
+                            System.out.print("잘못 입력하셨습니다. 다시 입력해주세요 : ");
+                            again = sc7.nextLine();
+                        }
+                }
+            } while (!again.equals("n"));
 
-        System.out.println("========== 등록된 사원 정보 조회 ==========");
-        for (int i = 0; i < count; i++) {
-            System.out.println(employees[i].information());
+        } catch (Exception e) {
+            e.printStackTrace();
+            System.out.println("========== 등록된 사원 정보 조회 ==========");
+            for (int i = 0; i < count; i++) {
+                System.out.println(employees[i].information());
+            }
         }
     }
 }
