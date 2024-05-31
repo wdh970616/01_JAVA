@@ -1,11 +1,8 @@
 package com.ohgiraffers.hw1.run;
 
 import com.ohgiraffers.hw1.model.dto.EmployeeDTO;
-import com.ohgiraffers.hw1.model.dto.PersonDTO;
 import com.ohgiraffers.hw1.model.dto.StudentDTO;
-import org.w3c.dom.ls.LSOutput;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Application {
@@ -54,8 +51,19 @@ public class Application {
             employees[count] = new EmployeeDTO(name, age, height, weight, salary, dept);
             count++;
             System.out.println(count + "번째로 정보가 추가되었습니다.");
-            System.out.print("추가하시려면 아무 키나 입력하시고, 종료하시려면 'n'을 입력하세요 : ");
+            System.out.print("추가하시려면 'y'를, 종료하시려면 'n'을 입력하세요 : ");
             again = sc7.nextLine();
+            switch (again) {
+                case "y":
+                    break;
+                case "n":
+                    break;
+                default:
+                    for (; !(again.equals("y") || again.equals("n")); ) {
+                        System.out.print("잘못 입력하셨습니다. 다시 입력해주세요 : ");
+                        again = sc7.nextLine();
+                    }
+            }
         } while (!again.equals("n"));
 
         System.out.println("========== 등록된 사원 정보 조회 ==========");
