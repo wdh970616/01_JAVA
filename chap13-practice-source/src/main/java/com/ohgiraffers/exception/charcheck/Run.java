@@ -1,17 +1,17 @@
 package com.ohgiraffers.exception.charcheck;
 
-import com.ohgiraffers.exception.CharCheckException;
-
 import java.util.Scanner;
 
 public class Run {
-    public void main() {
+    public static void main(String[] args) {
+        CharCheckException ce = new CharCheckException();
+        CharacterProcess cp = new CharacterProcess();
         Scanner sc = new Scanner(System.in);
         System.out.print("");
         String s = sc.nextLine();
-        CharCheckException ce = new CharCheckException();
+        cp.countAlpha(s);
         try {
-            ce.checkBlackSpace();
+            ce.checkBlackSpace(s);
         } catch (Exception e) {
             e.printStackTrace();
         }

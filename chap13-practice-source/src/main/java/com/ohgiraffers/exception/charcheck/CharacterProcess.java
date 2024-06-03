@@ -1,7 +1,5 @@
 package com.ohgiraffers.exception.charcheck;
 
-import com.ohgiraffers.exception.CharCheckException;
-
 public class CharacterProcess {
 
     public CharacterProcess() {
