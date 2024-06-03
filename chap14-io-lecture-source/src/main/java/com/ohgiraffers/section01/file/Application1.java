@@ -17,7 +17,7 @@ public class Application1 {
         File file = new File("src/main/java/com/ohgiraffers/section01/file/test.txt");
         try {
             Boolean isCreate = file.createNewFile();
-            // createNweFile()
+            // createNewFile()
             // 파일 생성 후 성공, 실패 여부를 boolean으로 리턴한다.
             // 최초 실행시 새롭게 파일이 만들어지기 때문에 true 반환,
             // 한번 생성되고난 이후에는 새롭게 파일이 생성되지 않기 때문에 false 반환.
