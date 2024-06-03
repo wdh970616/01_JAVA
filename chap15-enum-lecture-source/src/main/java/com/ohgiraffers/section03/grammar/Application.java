@@ -23,7 +23,7 @@ public class Application {
         System.out.println("consumer.description() : " + consumer.getDescription());
         System.out.println();
 
-        // EnumSet을 활용해 여러 열거형 타입들을 set우로 취급할 수 있다.
+        // EnumSet을 활용해 여러 열거형 타입들을 set으로 취급할 수 있다.
         EnumSet<UserRole2> roles = EnumSet.allOf(UserRole2.class);
         Iterator<UserRole2> iter = roles.iterator();
         while (iter.hasNext()) {
