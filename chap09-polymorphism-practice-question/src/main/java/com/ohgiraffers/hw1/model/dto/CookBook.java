@@ -1,19 +1,18 @@
 package com.ohgiraffers.hw1.model.dto;
 
-public class Cookbook extends Book {
+public class CookBook extends Book {
     private boolean coupon;
 
     @Override
     public String toString() {
-        return "Cookbook{" +
-                "coupon=" + coupon +
-                '}';
+        return super.toString() + "\b | 쿠폰유무 : " + (coupon ? "있음" : "없음") + ']';
+
     }
 
-    public Cookbook() {
+    public CookBook() {
     }
 
-    public Cookbook(String title, String author, String publisher, boolean coupon) {
+    public CookBook(String title, String author, String publisher, boolean coupon) {
         super(title, author, publisher);
         this.coupon = coupon;
     }

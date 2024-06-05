@@ -8,7 +8,7 @@ public class Member {
 
     @Override
     public String toString() {
-        return super.toString();
+        return "회원정보 [" + "이름 : " + name + " | 나이 : " + age + " | 성별 : " + gender + " | 보유 쿠폰 갯수 : " + couponCount + ']';
     }
 
     public Member() {}
